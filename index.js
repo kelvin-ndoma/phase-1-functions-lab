@@ -10,7 +10,7 @@ function distanceFromHqInBlocks(distance){
         let blocks= 42 - distance
         return blocks
     }
-    }
+}
     //<!-------------returns distance in blocks--->
 function distanceFromHqInFeet(distance){
         if (distance > 42) {
@@ -21,7 +21,7 @@ function distanceFromHqInFeet(distance){
             return feet
 
         }
-    }
+}
    //
 function distanceTravelledInFeet(start, destination){
     if (start < destination ) {
@@ -31,16 +31,16 @@ function distanceTravelledInFeet(start, destination){
     } 
    }   
 
-function calculateFarePrice(start, destination) {
-    const distance = distanceTravelledInFeet(start, destination)
-    
-    if (distance <= 400){
-        return 0;
-    }else if (distance > 400 && distance <= 2000){
-        return(distance - 400) * .02
-    }else if (distance > 2000 && distance < 2500) {
-        return 25
-    }else {
-        return 'cannot travel that far'
+   function calculatesFarePrice(start, destination) {
+    const distance = distanceTravelledInFeet(start, destination);
+  
+    if (distance <= 400) {
+      return 0;
+    } else if (distance > 400 && distance <= 2000) {
+      return (distance - 400) * .02
+    } else if ( distance > 2000 && distance < 2500) {
+      return 25
+    } else {
+      return 'cannot travel that far'
     }
-}
+  }
